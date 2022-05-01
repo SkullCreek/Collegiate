@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <title>Collegiate</title>
 </head>
 <body>
@@ -19,19 +21,30 @@
                 <a href=""><img src="assets/logo.svg" alt=""></a>
                 <div>
                     <button style="color: #1EBB9C; background-color: #E0FFF8;">Login</button>
-                    <button style="background-color: #1EBB9C; color: white;">Sign up</button>
+                    <button id="signbtn" style="background-color: #1EBB9C; color: white;">Sign up</button>
                 </div>
             </nav>
             <section>
                 <aside id="left">
                     <h1>Ma’am I was <span>Present</span>.</h1>
                     <p>Its so important to understand your good attendance ups your chances of graduating.</p>
-                    <button style="width: fit-content; background-color: #1EBB9C; color: white; padding: 1.2rem 3.2rem; font-size: 1.6rem;">Get Started</button>
+                    <button id="signbtn2" style="width: fit-content; background-color: #1EBB9C; color: white; padding: 1.2rem 3.2rem; font-size: 1.6rem;">Get Started</button>
                 </aside>
                 <aside id="right"></aside>
             </section>
         </header>
     </main>
+    <section class="signup" id="signup">
+        <form id="form" class="animate__animated">
+            <h3>Get started with<br>Collegiate.</h3>
+            <p id="email">Email Address</p>
+            <input type="email"  placeholder="debra.holt@example.com">
+            <p id="password">Password</p>
+            <input type="password" placeholder="Darpan@1977.">
+            <p style="margin-bottom: 1.8rem; margin-right: 2rem; font-weight: normal; font-size: 1.4rem;display: flex;align-items: center;"><input type="checkbox"><span>I agree terms and condition</span></p>
+            <input type="submit" value="Register" style="border: none; background: #F23E64; color: white; ">
+        </form>
+    </section>
     <script src="script/script.js"></script>
 </body>
 </html>
