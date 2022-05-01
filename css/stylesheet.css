@@ -246,4 +246,103 @@ a {
   background-size: contain;
   z-index: 100;
 }
+
+.login {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.25);
+  display: none;
+  place-items: center;
+}
+
+.login form {
+  width: 50rem;
+  background-color: white;
+  -webkit-box-shadow: 9.39709px 25.3119px 63px rgba(0, 0, 0, 0.01);
+          box-shadow: 9.39709px 25.3119px 63px rgba(0, 0, 0, 0.01);
+  border-radius: 2rem;
+  padding: 3.9rem 5.8rem;
+}
+
+.login form h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  line-height: 39px;
+  text-align: center;
+  -webkit-font-feature-settings: 'salt' on, 'liga' off;
+          font-feature-settings: 'salt' on, 'liga' off;
+  padding-bottom: 5rem;
+}
+
+.login form p {
+  position: relative;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+
+.login form input[type=email], .login form input[type=password], .login form input[type=submit] {
+  width: 100%;
+  margin-bottom: 4rem;
+  padding: 1rem 1rem 1rem 5rem;
+  outline: none;
+  border: 2px solid #E2E2E2;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #A0A0A0;
+}
+
+.login form input[type=submit] {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.8rem;
+  letter-spacing: -0.02em;
+  padding: 1.2rem 0rem;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.login form input[type=checkbox] {
+  border: 2px solid #E2E2E2;
+  margin-right: .9rem;
+}
+
+.login form #email::before {
+  content: "";
+  position: absolute;
+  top: 2.7rem;
+  left: .7rem;
+  width: 3rem;
+  height: 3rem;
+  background: url("../assets/mail.svg") center center no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
+
+.login form #password::before {
+  content: "";
+  position: absolute;
+  top: 2.7rem;
+  left: .7rem;
+  width: 3rem;
+  height: 3rem;
+  background: url("../assets/password.svg") center center no-repeat;
+  background-size: contain;
+  z-index: 100;
+}
 /*# sourceMappingURL=stylesheet.css.map */

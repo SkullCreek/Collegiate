@@ -13,7 +13,7 @@ const signup = () => {
         form.classList.remove("animate__bounceOut");
         form.classList.add("animate__bounceIn");
     }
-    document.onclick = function(e){
+    signup[0].onclick = function(e){
         if(e.target.id == 'signup'){
             form.classList.remove("animate__bounceIn");
             form.classList.add("animate__bounceOut");
@@ -24,3 +24,25 @@ const signup = () => {
     }
 }
 signup();
+
+
+const login = () => {
+    let log_btn = document.getElementById("logbtn");
+    let login = document.getElementsByClassName("login");
+    let form2 = document.getElementById("form2");
+    log_btn.onclick = () =>{
+        login[0].style.display = "grid";
+        form2.classList.remove("animate__bounceOut");
+        form2.classList.add("animate__bounceIn");
+    }
+    login[0].onclick = function(e){
+        if(e.target.id == 'login'){
+            form2.classList.remove("animate__bounceIn");
+            form2.classList.add("animate__bounceOut");
+            setTimeout(function(){
+                login[0].style.display = 'none';
+            },800);     
+        }
+    }
+}
+login();
